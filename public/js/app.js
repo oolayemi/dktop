@@ -1945,6 +1945,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "App"
 });
@@ -37594,42 +37595,57 @@ var render = function() {
     _vm._m(0),
     _vm._v(" "),
     _c("div", { staticClass: "flex flex-grow overflow-hidden" }, [
-      _c("div", { staticClass: "m-3" }, [
-        _c(
-          "div",
-          { staticClass: "flex items-center group" },
-          [
-            _c("router-link", { attrs: { to: { name: "home" } } }, [
-              _vm._v("\n                    Home\n                ")
-            ])
-          ],
-          1
-        ),
-        _vm._v(" "),
-        _c(
-          "div",
-          { staticClass: "flex items-center group" },
-          [
-            _c("router-link", { attrs: { to: { name: "hello" } } }, [
-              _vm._v("\n                    Hello\n                ")
-            ])
-          ],
-          1
-        ),
-        _vm._v(" "),
-        _c(
-          "div",
-          { staticClass: "flex items-center group" },
-          [
-            _c("router-link", { attrs: { to: { name: "contact" } } }, [
-              _vm._v("\n                    Contact\n                ")
-            ])
-          ],
-          1
-        )
-      ]),
+      _c(
+        "div",
+        {
+          staticClass: "p-3 h-full",
+          staticStyle: { "background-color": "#070064" }
+        },
+        [
+          _c(
+            "div",
+            { staticClass: "flex items-center group" },
+            [
+              _c("router-link", { attrs: { to: { name: "home" } } }, [
+                _vm._v("\n                    Home\n                ")
+              ])
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "div",
+            { staticClass: "flex items-center group" },
+            [
+              _c("router-link", { attrs: { to: { name: "hello" } } }, [
+                _vm._v("\n                    Hello\n                ")
+              ])
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "div",
+            { staticClass: "flex items-center group" },
+            [
+              _c("router-link", { attrs: { to: { name: "contact" } } }, [
+                _vm._v("\n                    Contact\n                ")
+              ])
+            ],
+            1
+          )
+        ]
+      ),
       _vm._v(" "),
-      _c("div", { staticClass: "m-3" }, [_c("router-view")], 1)
+      _c(
+        "div",
+        {
+          staticClass: "p-3 ml-1",
+          staticStyle: { "background-color": "#2e3764" }
+        },
+        [_c("router-view")],
+        1
+      )
     ])
   ])
 }
@@ -37638,17 +37654,19 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", [
-      _c("nav", {
-        staticClass: "navbar navbar-expand-md navbar-light  bg-white shadow-sm",
-        staticStyle: { width: "20%" }
-      }),
-      _vm._v(" "),
-      _c("nav", {
-        staticClass: "navbar navbar-expand-md navbar-light  bg-white shadow-sm",
-        staticStyle: { width: "80%" }
-      })
-    ])
+    return _c(
+      "nav",
+      {
+        staticClass: "navbar navbar-expand-md navbar-light  bg-white shadow-sm"
+      },
+      [
+        _c("div", { staticClass: "container" }, [
+          _c("a", { staticClass: "navbar-brand", attrs: { href: "/" } }, [
+            _vm._v("DKtop")
+          ])
+        ])
+      ]
+    )
   }
 ]
 render._withStripped = true

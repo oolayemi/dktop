@@ -7,7 +7,7 @@
         </nav>
 
         <div class="flex flex-grow overflow-hidden">
-            <div class="m-3 h-full" style="background-color: #1d643b">
+            <div class="p-3 h-full" style="background-color: #070064">
                 <div class="flex items-center group">
                     <router-link :to="{name: 'home'}">
                         Home
@@ -28,7 +28,7 @@
 
             </div>
 
-            <div class="m-3">
+            <div class="p-3 ml-1"  style="background-color: #2e3764">
                 <router-view/>
             </div>
 
