@@ -1,3 +1,5 @@
+
+
 require('./bootstrap');
 
 import Vue from 'vue';
@@ -8,6 +10,7 @@ Vue.use(VueRouter);
 import App from "./view/App";
 import Hello from "./view/Hello";
 import Home from "./view/Home";
+import Contact from "./view/Contact";
 
 const router = new VueRouter({
     mode: 'history',
@@ -21,6 +24,11 @@ const router = new VueRouter({
             path: '/hello',
             name: 'hello',
             component: Hello
+        },
+        {
+            path: '/contact',
+            name: 'contact',
+            component: Contact
         }
     ]
 });

@@ -1,14 +1,37 @@
 <template>
     <div>
-        <h1>Vue Router Demo App</h1>
+        <nav class="navbar navbar-expand-md navbar-light  bg-white shadow-sm">
+            <div class="container">
+                <a class="navbar-brand" href="/">DKtop</a>
+            </div>
+        </nav>
 
-        <p>
-            <router-link :to="{name: 'home'}"> Home </router-link>
-            <router-link :to="{name: 'hello'}"> Hello World </router-link>
-        </p>
+        <div class="flex flex-grow overflow-hidden">
+            <div class="m-3 h-full" style="background-color: #1d643b">
+                <div class="flex items-center group">
+                    <router-link :to="{name: 'home'}">
+                        Home
+                    </router-link>
+                </div>
 
-        <div class="container">
-            <router-view/>
+                <div class="flex items-center group">
+                    <router-link :to="{name: 'hello'}">
+                        Hello
+                    </router-link>
+                </div>
+
+                <div class="flex items-center group">
+                    <router-link :to="{name: 'contact'}">
+                        Contact
+                    </router-link>
+                </div>
+
+            </div>
+
+            <div class="m-3">
+                <router-view/>
+            </div>
+
         </div>
     </div>
 </template>
