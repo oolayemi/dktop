@@ -1925,27 +1925,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "App"
 });
@@ -1999,6 +1978,16 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -37591,82 +37580,42 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [
-    _vm._m(0),
-    _vm._v(" "),
-    _c("div", { staticClass: "flex flex-grow overflow-hidden" }, [
-      _c(
-        "div",
-        {
-          staticClass: "p-3 h-full",
-          staticStyle: { "background-color": "#070064" }
-        },
-        [
-          _c(
-            "div",
-            { staticClass: "flex items-center group" },
-            [
-              _c("router-link", { attrs: { to: { name: "home" } } }, [
-                _vm._v("\n                    Home\n                ")
-              ])
-            ],
-            1
-          ),
-          _vm._v(" "),
-          _c(
-            "div",
-            { staticClass: "flex items-center group" },
-            [
-              _c("router-link", { attrs: { to: { name: "hello" } } }, [
-                _vm._v("\n                    Hello\n                ")
-              ])
-            ],
-            1
-          ),
-          _vm._v(" "),
-          _c(
-            "div",
-            { staticClass: "flex items-center group" },
-            [
-              _c("router-link", { attrs: { to: { name: "contact" } } }, [
-                _vm._v("\n                    Contact\n                ")
-              ])
-            ],
-            1
-          )
-        ]
-      ),
-      _vm._v(" "),
-      _c(
-        "div",
-        {
-          staticClass: "p-3 ml-1",
-          staticStyle: { "background-color": "#2e3764" }
-        },
-        [_c("router-view")],
-        1
-      )
-    ])
-  ])
+  return _vm._m(0)
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c(
-      "nav",
-      {
-        staticClass: "navbar navbar-expand-md navbar-light  bg-white shadow-sm"
-      },
-      [
-        _c("div", { staticClass: "container" }, [
-          _c("a", { staticClass: "navbar-brand", attrs: { href: "/" } }, [
-            _vm._v("DKtop")
+    return _c("div", [
+      _c(
+        "nav",
+        {
+          staticClass:
+            "navbar navbar-expand-md navbar-light  bg-white shadow-sm"
+        },
+        [
+          _c("div", { staticClass: "container" }, [
+            _c("a", { staticClass: "navbar-brand", attrs: { href: "/" } }, [
+              _vm._v("GetWork")
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "container" }, [
+              _c("form", { attrs: { action: "", role: "search" } }, [
+                _c("input", {
+                  staticClass: "search-input form-control",
+                  attrs: {
+                    type: "text",
+                    name: "name",
+                    placeholder: "Find Jobs"
+                  }
+                })
+              ])
+            ])
           ])
-        ])
-      ]
-    )
+        ]
+      )
+    ])
   }
 ]
 render._withStripped = true
@@ -37738,9 +37687,51 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("p", [_vm._v(" This is the homepage ")])
+  return _vm._m(0)
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", [
+      _c("h1", { staticClass: "mb-8 mt-4 font-bold text-3xl" }, [
+        _vm._v("Dashboard")
+      ]),
+      _vm._v(" "),
+      _c("p", { staticClass: "mb-8 leading-normal" }, [
+        _vm._v(
+          "Hey there! Welcome to Ping CRM, a demo app designed to help illustrate how "
+        ),
+        _c(
+          "a",
+          {
+            staticClass: "text-indigo-500 underline hover:text-orange-600",
+            attrs: { href: "https://inertiajs.com" }
+          },
+          [_vm._v("Inertia.js")]
+        ),
+        _vm._v(" works.")
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "mb-8 flex" }, [
+        _c("a", { staticClass: "btn-indigo", attrs: { href: "/500" } }, [
+          _vm._v("500 error")
+        ]),
+        _vm._v(" "),
+        _c("a", { staticClass: "btn-indigo ml-1", attrs: { href: "/404" } }, [
+          _vm._v("404 error")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("p", { staticClass: "leading-normal" }, [
+        _vm._v(
+          "👆 These links are intended to be broken to illustrate how error handling works with Inertia.js.🥰"
+        )
+      ])
+    ])
+  }
+]
 render._withStripped = true
 
 

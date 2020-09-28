@@ -17,7 +17,7 @@
             }
         </style>
     </head>
-    <body class=" antialiased">
+    <body class="antialiased">
 
 
         <div id="app">
